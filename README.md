@@ -27,7 +27,7 @@
 -   비트마스크(Bit Masking)
 -   구간 합 배열(Prefix Sum)
 -   우선순위 큐(Priority Queue)
--   유니온 파인드(Union-Find)
+-   [유니온 파인드(Union-Find)](https://github.com/profornnan/Data-Structure-and-Algorithm/blob/master/3_초급/유니온_파인드(Union-Find).md#유니온-파인드union-find)
 -   투 포인터, 슬라이딩 윈도우(Sliding Window)
 -   그래프 최단 경로: 다익스트라 알고리즘(Dijkstra’s Algorithm)
 -   최소 스패닝 트리(MST)
