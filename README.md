@@ -9,7 +9,7 @@
 -   BFS, DFS
 -   정렬
 -   구현
--   재귀(Recursion)
+-   [재귀(Recursion)](https://github.com/profornnan/Data-Structure-and-Algorithm/blob/master/1_기초/재귀(Recursion).md#재귀recursion)
     -   조합(Combination)
         -   이항계수
 
