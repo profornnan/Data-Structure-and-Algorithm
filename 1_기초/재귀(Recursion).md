@@ -10,7 +10,7 @@
 * 집합에서 서로 다른 n개의 원소 중에서 순서에 상관없이 r개를 선택하는 것을 **조합**이라고 하며, 그 경우의 수를 **이항계수**라고 한다.
 
 $$
-_nC_r = _{n-1}C_{r-1} + _{n-1}C_r
+{_nC_r = _{n-1}C_{r-1} + _{n-1}C_r}
 $$
 
 $$
@@ -33,6 +33,4 @@ int combination(int n, int r) {
 	return d[n][r] = combination(n - 1, r - 1) + combination(n - 1, r);
 }
 ```
-
-
 
