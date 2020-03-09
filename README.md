@@ -34,7 +34,7 @@
 -   투 포인터, 슬라이딩 윈도우(Sliding Window)
 -   그래프 최단 경로: 다익스트라 알고리즘(Dijkstra’s Algorithm)
 -   [최소 스패닝 트리(MST)](https://github.com/profornnan/Data-Structure-and-Algorithm/blob/master/3_초급/최소_스패닝_트리(MST).md#최소-스패닝-트리mst)
--   위상 정렬(Topological Sort)
+-   [위상 정렬(Topological Sort)](https://github.com/profornnan/Data-Structure-and-Algorithm/blob/master/3_초급/위상_정렬(Topological_Sort).md#위상-정렬topological-sort)
 
 
 
