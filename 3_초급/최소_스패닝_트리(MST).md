@@ -81,3 +81,76 @@ int kruscal(vector<pair<int, int> >& selected) {
 
 
 
+## 프림의 최소 스패닝 트리 알고리즘
+
+* 크루스칼 알고리즘과 같은 원리로 동작하는 또 다른 스패닝 트리 알고리즘
+* 크루스칼 알고리즘에서는 여기저기서 산발적으로 만들어진 트리의 조각들을 합쳐 스패닝 트리를 만드는 반면, 프림 알고리즘에서는 하나의 시작점으로 구성된 트리에 간선을 하나씩 추가하며 스패닝 트리가 될 때까지 키워 간다.
+* 선택된 간선들은 중간 과정에서도 항상 트리를 이루게 된다.
+* 이미 만들어진 트리에 인접한 간선만을 고려한다.
+* 선택할 수 있는 간선들 중 가중치가 가장 작은 간선을 선택하는 과정을 반복한다.
+
+
+
+### 프림 알고리즘의 구현
+
+```c++
+// 프림의 최소 스패닝 트리 알고리즘
+const int MAX_V = 100;
+const int INF = 987654321;
+// the number of vertices
+int V;
+// adjacency list. (id, weight)
+vector<pair<int, int> > adj[MAX_V];
+// heap nodes
+struct MST_node {
+	int id;
+	int key;
+	int parent;
+};
+// compare heap nodes
+class Compare {
+public:
+	bool operator()(MST_node n1, MST_node n2) {
+		return n1.key > n2.key;
+	}
+};
+
+int prim(vector<pair<int, int> >& selected) {
+	int ret = 0;
+	selected.clear();
+    
+	priority_queue<MST_node, vector<MST_node>, Compare> q;
+	vector<bool> added(V, false);
+	vector<int> key(V, INF);
+    
+	MST_node src = { 0, 0, -1 };  // source node
+	key[0] = 0;
+	q.push(src);
+    
+	while (!q.empty())
+	{
+		MST_node min = q.top();
+		q.pop();
+		int u = min.id;
+		if (added[u] == true)  // skip if already in MST
+			continue;
+		added[u] = true;
+		ret += min.key;
+		if (min.parent >= 0)
+			selected.push_back(make_pair(min.parent, min.id));
+		for (unsigned i = 0; i < adj[u].size(); i++) {
+			int v = adj[u][i].first;
+			int w = adj[u][i].second;
+			if (!added[v] && key[v] > w) {
+				key[v] = w;
+				MST_node a = { v, w, u };
+				q.push(a);
+			}
+		}
+	}
+	return ret;
+}
+```
+
+
+
