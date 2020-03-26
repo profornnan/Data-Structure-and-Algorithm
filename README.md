@@ -28,7 +28,7 @@
 
 -   백트래킹(Backtracking)
 -   [비트마스크(Bit Masking)](https://github.com/profornnan/Data-Structure-and-Algorithm/blob/master/3_초급/비트마스크(Bit_Masking).md#비트마스크bit-masking)
--   부분 합(Partial Sum)
+-   [부분 합(Partial Sum)](https://github.com/profornnan/Data-Structure-and-Algorithm/blob/master/3_초급/부분_합(Partial_Sum).md#부분-합partial-sum)
 -   우선순위 큐(Priority Queue)
 -   [유니온 파인드(Union-Find)](https://github.com/profornnan/Data-Structure-and-Algorithm/blob/master/3_초급/유니온_파인드(Union-Find).md#유니온-파인드union-find)
 -   투 포인터, 슬라이딩 윈도우(Sliding Window)
