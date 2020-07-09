@@ -31,7 +31,7 @@
 -   [부분 합(Partial Sum)](https://github.com/profornnan/Data-Structure-and-Algorithm/blob/master/3_초급/부분_합(Partial_Sum).md#부분-합partial-sum)
 -   우선순위 큐(Priority Queue)
 -   [유니온 파인드(Union-Find)](https://github.com/profornnan/Data-Structure-and-Algorithm/blob/master/3_초급/유니온_파인드(Union-Find).md#유니온-파인드union-find)
--   투 포인터, 슬라이딩 윈도우(Sliding Window)
+-   [투 포인터, 슬라이딩 윈도우(Sliding Window)](https://github.com/profornnan/Data-Structure-and-Algorithm/blob/master/3_%EC%B4%88%EA%B8%89/%ED%88%AC_%ED%8F%AC%EC%9D%B8%ED%84%B0%2C_%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9_%EC%9C%88%EB%8F%84%EC%9A%B0(Sliding_Window).md#%ED%88%AC-%ED%8F%AC%EC%9D%B8%ED%84%B0-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9-%EC%9C%88%EB%8F%84%EC%9A%B0sliding-window)
 -   그래프 최단 경로: 다익스트라 알고리즘(Dijkstra’s Algorithm)
 -   [최소 스패닝 트리(MST)](https://github.com/profornnan/Data-Structure-and-Algorithm/blob/master/3_초급/최소_스패닝_트리(MST).md#최소-스패닝-트리mst)
 -   [위상 정렬(Topological Sort)](https://github.com/profornnan/Data-Structure-and-Algorithm/blob/master/3_초급/위상_정렬(Topological_Sort).md#위상-정렬topological-sort)
